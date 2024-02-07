@@ -1,5 +1,9 @@
 package com.fursah.BankSystem.controller;
 
+import com.fursah.BankSystem.entity.UserEntity;
+import com.fursah.BankSystem.service.UserService;
+import com.fursah.BankSystem.bo.Contact;
+import com.fursah.BankSystem.bo.Farewel;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;

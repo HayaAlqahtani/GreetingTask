@@ -1,4 +1,4 @@
-package com.fursah.BankSystem.controller;
+package com.fursah.BankSystem.bo;
 
 public class Contact {
     private String name;

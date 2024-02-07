@@ -1,4 +1,4 @@
-package com.fursah.BankSystem.controller;
+package com.fursah.BankSystem.bo;
 
 public class Farewel {
         private String name;
@@ -10,5 +10,6 @@ public class Farewel {
         public void setName(String name) {
             this.name = name;
         }
-    }
+
+}
 
