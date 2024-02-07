@@ -1,4 +1,4 @@
-package com.fursah.BankSystem.service;
+package com.fursah.BankSystem.service.user;
 
 import com.fursah.BankSystem.bo.user.UpdateUserRequest;
 import com.fursah.BankSystem.entity.UserEntity;

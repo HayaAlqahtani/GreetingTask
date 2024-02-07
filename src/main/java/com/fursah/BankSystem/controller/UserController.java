@@ -2,8 +2,7 @@ package com.fursah.BankSystem.controller;
 
 import com.fursah.BankSystem.bo.user.CreateUserRequest;
 import com.fursah.BankSystem.bo.user.UpdateUserRequest;
-import com.fursah.BankSystem.service.UserService;
-import org.apache.coyote.Response;
+import com.fursah.BankSystem.service.user.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;

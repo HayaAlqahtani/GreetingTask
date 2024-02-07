@@ -1,6 +1,7 @@
-package com.fursah.BankSystem.service;
+package com.fursah.BankSystem.service.user;
 
 import com.fursah.BankSystem.bo.user.UpdateUserRequest;
+import com.fursah.BankSystem.service.user.UserService;
 import com.fursah.BankSystem.util.enums.Status;
 import com.fursah.BankSystem.entity.UserEntity;
 import com.fursah.BankSystem.reposatriy.UserRepository;
@@ -8,7 +9,7 @@ import com.fursah.BankSystem.bo.user.CreateUserRequest;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserServiceImp implements  UserService{
+public class UserServiceImp implements UserService {
     private final UserRepository userRepository;
 
     public UserServiceImp(UserRepository userRepository) {

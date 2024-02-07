@@ -1,5 +1,6 @@
 package com.fursah.BankSystem.entity;
 
+import com.fursah.BankSystem.util.enums.Roles;
 import com.fursah.BankSystem.util.enums.Status;
 
 import javax.persistence.*;
@@ -21,7 +22,14 @@ public class UserEntity {
     @Column(name = "status",nullable = false)
     @Enumerated(EnumType.STRING)
     private Status status;
+    @Column(name = "username", nullable = false)
+    private String username;
 
+    @Column(name = "password", nullable = false)
+    private String password;
+    @OneToOne
+    @JoinColumn(name = "role_id")
+    private RoleEntity roles;
 
     public Long getId() {
         return id;
@@ -60,5 +68,29 @@ public class UserEntity {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public RoleEntity getRoles() {
+        return roles;
+    }
+
+    public void setRoles(RoleEntity roles) {
+        this.roles = roles;
     }
 }
