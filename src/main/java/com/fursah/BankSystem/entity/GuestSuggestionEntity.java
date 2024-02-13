@@ -57,7 +57,16 @@ public class GuestSuggestionEntity {
         return suggestionText;
     }
 
-    public void setSuggestionText(Object suggestionText) {
+    public void setSuggestionText(String suggestionText) {
         this.suggestionText = suggestionText;
     }
+
+
+    public void setSuggestionText(Object text) {
+        this.suggestionText = suggestionText;
+    }
+
+
 }
+
+
