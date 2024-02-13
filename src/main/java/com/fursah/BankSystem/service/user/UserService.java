@@ -11,4 +11,7 @@ public interface UserService {
     void saveUser(CreateUserRequest createUserRequest);
 
     void updateUserStaus(UpdateUserRequest updateUserRequest);
+
+    List<UserEntity>getAllusersWithStrongPassword();
+
 }

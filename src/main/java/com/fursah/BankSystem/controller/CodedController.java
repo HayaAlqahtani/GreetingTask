@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api/v1/user")
 public class CodedController {
     private List<Contact> contacts = new ArrayList<>();
 
