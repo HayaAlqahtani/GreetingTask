@@ -4,7 +4,6 @@ import com.fursah.BankSystem.bo.customeUserDetails.CustomUserDetails;
 import com.fursah.BankSystem.entity.UserEntity;
 import com.fursah.BankSystem.reposatriy.UserRepository;
 import javassist.NotFoundException;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;

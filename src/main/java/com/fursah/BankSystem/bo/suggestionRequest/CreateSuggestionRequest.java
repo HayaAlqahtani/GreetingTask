@@ -1,11 +1,23 @@
 package com.fursah.BankSystem.bo.suggestionRequest;
+import com.fursah.BankSystem.util.enums.SuggestionStatus;
 
 public class CreateSuggestionRequest {
-    private String rate;
     private String suggestionText;
-
-    public CreateSuggestionRequest(String rate, String suggestionText) {
+    private String rate;
+    private SuggestionStatus status;
+    public CreateSuggestionRequest(String suggestionText, String rate, SuggestionStatus status) {
+        this.suggestionText = suggestionText;
         this.rate = rate;
+        this.status = status;
+    }
+
+
+
+    public String getSuggestionText() {
+        return suggestionText;
+    }
+
+    public void setSuggestionText(String suggestionText) {
         this.suggestionText = suggestionText;
     }
 
@@ -17,11 +29,11 @@ public class CreateSuggestionRequest {
         this.rate = rate;
     }
 
-    public String getSuggestionText() {
-        return suggestionText;
+    public SuggestionStatus getStatus() {
+        return status;
     }
 
-    public void setSuggestionText(String suggestionText) {
-        this.suggestionText = suggestionText;
+    public void setStatus(SuggestionStatus status) {
+        this.status = status;
     }
 }

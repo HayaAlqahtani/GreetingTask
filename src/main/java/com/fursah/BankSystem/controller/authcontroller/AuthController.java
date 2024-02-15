@@ -4,7 +4,6 @@ import com.fursah.BankSystem.bo.auth.AuthenticationResponce;
 import com.fursah.BankSystem.bo.auth.CreateLoginRequest;
 import com.fursah.BankSystem.bo.auth.CreateSignupRequest;
 import com.fursah.BankSystem.bo.auth.LogoutResponce;
-import com.fursah.BankSystem.bo.user.CreateUserRequest;
 import com.fursah.BankSystem.service.auth.AuthService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

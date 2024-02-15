@@ -1,6 +1,5 @@
 package com.fursah.BankSystem.entity;
 
-import com.fursah.BankSystem.util.enums.Roles;
 import com.fursah.BankSystem.util.enums.Status;
 
 import javax.persistence.*;

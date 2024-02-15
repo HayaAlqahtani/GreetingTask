@@ -1,6 +1,5 @@
 package com.fursah.BankSystem.config;
 
-import com.fursah.BankSystem.bo.customeUserDetails.CustomUserDetails;
 import com.fursah.BankSystem.service.auth.CustomUserDetailService;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

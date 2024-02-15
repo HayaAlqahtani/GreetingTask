@@ -1,7 +1,6 @@
 package com.fursah.BankSystem.reposatriy;
 
 import com.fursah.BankSystem.entity.RoleEntity;
-import com.fursah.BankSystem.util.enums.Roles;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

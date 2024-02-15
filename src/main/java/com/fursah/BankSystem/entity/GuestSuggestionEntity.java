@@ -4,38 +4,29 @@ import com.fursah.BankSystem.util.enums.SuggestionStatus;
 
 import javax.persistence.*;
 
+
 @Entity
+@Table(name = "suggestions")
 public class GuestSuggestionEntity {
-    @Id
-    @Column(name = "id", nullable = false)
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    @Column(nullable = false)
-    private String rate;
-    @Column(nullable = false)
-
-    private String suggestionText;
-
-    public SuggestionStatus getCreate() {
-        return create;
-    }
-
-    public void setCreate(SuggestionStatus create) {
-        this.create = create;
-    }
-
-    @Enumerated(EnumType.STRING)
-    private SuggestionStatus create;
-
-    public GuestSuggestionEntity(Long id, String rate, String suggestionText) {
-        this.id = id;
-        this.rate = rate;
-        this.suggestionText = suggestionText;
-    }
-
     public GuestSuggestionEntity() {
 
     }
+
+    @Id
+    @Column(name = "id",nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "rate",nullable = false)
+    private String rate;
+    @Column(name = "suggestion_text",nullable = false)
+    private String suggestionText;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "suggestion_status",nullable = false)
+    private SuggestionStatus suggestionsStatus;
+
+
+
 
     public Long getId() {
         return id;
@@ -61,12 +52,11 @@ public class GuestSuggestionEntity {
         this.suggestionText = suggestionText;
     }
 
-
-    public void setSuggestionText(Object text) {
-        this.suggestionText = suggestionText;
+    public SuggestionStatus getSuggestionsStatus() {
+        return suggestionsStatus;
     }
 
-
+    public void setSuggestionsStatus(SuggestionStatus suggestionsStatus) {
+        this.suggestionsStatus = suggestionsStatus;
+    }
 }
-
-

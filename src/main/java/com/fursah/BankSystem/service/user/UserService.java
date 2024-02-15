@@ -13,4 +13,10 @@ public interface UserService {
 
     List<String> getAllusersWithStrongPassword();
 
+    void updateUserStatus(Long userId, UpdateUserRequest updateUserStatusRequest);
+
+
+    List<String> getALlUsersWithStrongPassword();
+
+    void updateUserStaus(Long userId, UpdateUserRequest updateUserRequest);
 }
