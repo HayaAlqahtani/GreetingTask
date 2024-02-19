@@ -24,10 +24,11 @@ public class CustomUserDetailService implements UserDetailsService {
             throw new RuntimeException(e);
         }
     }
-    private CustomUserDetails buildCustomUserDetailsOfUsername(String username ) throws NotFoundException {
-        UserEntity user=userRepository.findByUsername(username)
-        .orElseThrow();
-        if (user==null){
+
+    private CustomUserDetails buildCustomUserDetailsOfUsername(String username) throws NotFoundException {
+        UserEntity user = userRepository.findByUsername(username)
+                .orElseThrow();
+        if (user == null) {
             throw new NotFoundException("User Not Found");
         }
         CustomUserDetails userDetails = new CustomUserDetails();
